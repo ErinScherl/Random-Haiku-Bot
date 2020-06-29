@@ -15,7 +15,6 @@ def makeline(syllables, final):
         word = words[random.randint(15, num)]
         while (found == False):
             naughty = False
-            nums = 0
             for y in word[1]:
                 for z in y:
                     if z.isdigit():
@@ -29,6 +28,7 @@ def makeline(syllables, final):
                     naughty = True
                     break
             if naughty == True:
+                 nums = 0
                  word = words[random.randint(15, num)]
                  continue
             found = True
